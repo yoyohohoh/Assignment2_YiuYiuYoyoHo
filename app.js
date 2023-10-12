@@ -19,7 +19,7 @@ app.listen(PORT, () => {
 //3a. Add the configuration for the MongoDB database.
 let mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/DressStore', {
+mongoose.connect('mongodb+srv://yoyohohoh:Yob1718N925@cluster0.apmkivg.mongodb.net/DressStore', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
