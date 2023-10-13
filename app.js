@@ -30,5 +30,8 @@ mongoose.connect(CloudURL, {
 let productRoutes = require('./routes/productRoutes');
 app.use('/api', productRoutes);
 
+let categoryRoutes = require('./routes/categoryRoutes');
+app.use('/api', categoryRoutes);
+
 module.exports = app;
 
