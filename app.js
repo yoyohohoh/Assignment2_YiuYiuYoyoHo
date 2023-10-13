@@ -18,8 +18,10 @@ app.listen(PORT, () => {
 
 //3a. Add the configuration for the MongoDB database.
 let mongoose = require('mongoose');
+let LocalURL = 'mongodb://localhost:27017/DressStore';
+let CloudURL = 'mongodb+srv://yoyohohoh:Yob1718N925@cluster0.apmkivg.mongodb.net/DressStore';
 
-mongoose.connect('mongodb+srv://yoyohohoh:Yob1718N925@cluster0.apmkivg.mongodb.net/DressStore', {
+mongoose.connect(CloudURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
